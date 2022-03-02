@@ -1,0 +1,11 @@
+_Project
+	Scripts
+	ECS
+		Components
+		Systems
+	Art
+	Audio
+		Sound
+		Music
+	Prefabs
+External Tools
