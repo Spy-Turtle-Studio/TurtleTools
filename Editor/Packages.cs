@@ -70,7 +70,7 @@ namespace spyturtlestudio.tools
         }
 
         private static string GetGistUrl(string id, string user = "DDiekmann") =>
-            $"https://gist.github.com/{user}/{id}";
+            $"https://gist.github.com/{user}/{id}/raw";
 
         private static PackageCollection GetInstalledPackages()
         {
