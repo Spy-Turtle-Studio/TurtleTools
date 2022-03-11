@@ -9,7 +9,7 @@ using static System.IO.Path;
 using static UnityEditor.PackageManager.Client;
 using static UnityEngine.Application;
 
-namespace spyturtlestudio.tools
+namespace spyturtlestudio.tools.Editor
 {
     public static class Packages
     {

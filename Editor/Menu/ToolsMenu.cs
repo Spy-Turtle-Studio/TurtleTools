@@ -1,9 +1,9 @@
 using UnityEditor;
-using static spyturtlestudio.tools.FolderStructure;
-using static spyturtlestudio.tools.Packages;
+using static spyturtlestudio.tools.Editor.FolderStructure;
+using static spyturtlestudio.tools.Editor.Packages;
 using static UnityEngine.Debug;
 
-namespace spyturtlestudio.tools
+namespace spyturtlestudio.tools.Editor.Menu
 {
     public static class ToolsMenu
     {

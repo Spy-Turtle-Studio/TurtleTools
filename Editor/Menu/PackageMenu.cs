@@ -1,7 +1,7 @@
 using UnityEditor;
-using static spyturtlestudio.tools.Packages;
+using static spyturtlestudio.tools.Editor.Packages;
 
-namespace spyturtlestudio.tools
+namespace spyturtlestudio.tools.Editor.Menu
 {
     public static class PackageMenu
     {

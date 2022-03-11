@@ -1,12 +1,12 @@
 using System.IO;
-using UnityEngine;
+using Config;
 using static UnityEditor.AssetDatabase;
 
-namespace spyturtlestudio.tools
+namespace spyturtlestudio.tools.Editor
 {
-    public class ConfigManager
+    public static class ConfigManager
     {
-        public TurtleToolsConfig Config
+        public static TurtleToolsConfig Config
         {
             get
             {

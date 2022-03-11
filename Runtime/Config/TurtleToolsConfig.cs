@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace spyturtlestudio.tools
+namespace Config
 {
     [CreateAssetMenu(fileName = "TurtleToolsConfig", menuName = "TurtleTools/Config", order = 0)]
     public class TurtleToolsConfig : ScriptableObject

@@ -2,17 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using JetBrains.Annotations;
-using UnityEditor;
-using UnityEngine;
 using static System.IO.Directory;
 using static System.IO.Path;
 using static System.Linq.Enumerable;
 using static System.String;
-using static spyturtlestudio.tools.ConfigManager;
 using static UnityEditor.AssetDatabase;
 using static UnityEngine.Application;
 
-namespace spyturtlestudio.tools
+namespace spyturtlestudio.tools.Editor
 {
     public static class FolderStructure
     {
@@ -28,7 +25,7 @@ namespace spyturtlestudio.tools
         
         public static void CreateDefaultDirectories()
         {
-            CreateDirectoriesFromTextFile(new ConfigManager().Config.DirStructure);
+            CreateDirectoriesFromTextFile(ConfigManager.Config.DirStructure);
             Refresh();
         }
 

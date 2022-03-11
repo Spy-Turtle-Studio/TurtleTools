@@ -1,7 +1,9 @@
 {
-    "name": "SpyTurtleStudio.Tools",
-    "rootNamespace": "spyturtlestudio.tools",
-    "references": [],
+    "name": "SpyTurtleStudio.Tools.Editor",
+    "rootNamespace": "spyturtlestudio.tools.Editor.",
+    "references": [
+        "GUID:9420449212135f04095ed3e76676eff4"
+    ],
     "includePlatforms": [
         "Editor"
     ],
