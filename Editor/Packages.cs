@@ -38,6 +38,16 @@ namespace spyturtlestudio.tools
             }
             UpdateInstalledPackages();
         }
+        
+        public static void InstallUnityPackagesFromGit(params string[] repositoryUrls)
+        {
+            foreach (var package in repositoryUrls)
+            { 
+                Debug.Log($"Installing {package}.");
+                Add($"{package}");
+            }
+            UpdateInstalledPackages();
+        }
 
         /// <summary>
         /// Checks if all packages with a given name are already installed.

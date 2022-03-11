@@ -20,5 +20,9 @@ namespace spyturtlestudio.tools
         [MenuItem("Tools/Packages/Install ECS 2D")]
         private static void InstallEcs2D() =>
             InstallUnityPackages("2d.entities", "2d.entities.physics");
+
+        [MenuItem(("Tools/Packages/Install LINQ for GameObjects"))]
+        private static void InstallLINQ() =>
+            InstallUnityPackagesFromGit("https://github.com/neuecc/LINQ-to-GameObject-for-Unity.git");
     }
 }
