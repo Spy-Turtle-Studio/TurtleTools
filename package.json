@@ -1,5 +1,10 @@
 {
     "name": "com.spyturtlestudio.tools",
-    "version": "0.0.1-preview.1",
-    "displayName": "Turtle Tools"
+    "version": "0.0.1",
+    "displayName": "Turtle Tools",
+    "unity": "2020.3",
+    "dependencies": {
+        "com.unity.inputsystem": "1.2.0",
+        "com.unity.textmeshpro": "3.0.6"
+    }
 }
