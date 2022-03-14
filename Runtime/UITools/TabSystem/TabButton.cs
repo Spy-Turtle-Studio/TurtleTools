@@ -10,7 +10,7 @@ namespace UITools
         private TabGroup _tabGroup;
         public Image Background { get; private set; }
 
-        private void Start()
+        private void Awake()
         {
             Background = GetComponent<Image>();
             _tabGroup = transform.GetComponentInParent<TabGroup>().Subscribe(this);
