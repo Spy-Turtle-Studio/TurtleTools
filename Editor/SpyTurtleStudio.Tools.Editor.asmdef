@@ -2,7 +2,7 @@
     "name": "SpyTurtleStudio.Tools.Editor",
     "rootNamespace": "spyturtlestudio.tools.Editor.",
     "references": [
-        "GUID:9420449212135f04095ed3e76676eff4"
+        "GUID:6546d7765b4165b40850b3667f981c26"
     ],
     "includePlatforms": [
         "Editor"

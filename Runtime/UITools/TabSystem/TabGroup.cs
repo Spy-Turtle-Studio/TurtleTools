@@ -1,22 +1,40 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using spyturtlestudio.tools.Editor.CustomInspector;
 using UnityEngine;
 
 namespace UITools
 {
     public class TabGroup : MonoBehaviour
     {
-        [SerializeField] private GameObject[] objectsToSwap;
-    
-        [SerializeField] private bool changeColor;
-        [SerializeField] private Color hoverColor;
-        [SerializeField] private Color selectedColor;
-        [SerializeField] private Color idleColor;
-    
-        [SerializeField] private bool changeSprite;
-        [SerializeField] private Sprite hoverSprite;
-        [SerializeField] private Sprite selectedSprite;
-        [SerializeField] private Sprite idleSprite;
+        [SerializeField] private PanelGroup panelsToSwap;
+        
+        [Space]
+        [SerializeField] 
+        private bool changeColor;
+        [SerializeField] 
+        [ConditionalHide("changeColor")] 
+        private Color hoverColor;
+        [SerializeField] 
+        [ConditionalHide("changeColor")] 
+        private Color selectedColor;
+        [SerializeField] 
+        [ConditionalHide("changeColor")] 
+        private Color idleColor;
+        
+        [Space]
+        [SerializeField] 
+        private bool changeSprite;
+        [SerializeField] 
+        [ConditionalHide("changeSprite")] 
+        private Sprite hoverSprite;
+        [SerializeField] 
+        [ConditionalHide("changeSprite")] 
+        private Sprite selectedSprite;
+        [SerializeField] 
+        [ConditionalHide("changeSprite")] 
+        private Sprite idleSprite;
     
         private List<TabButton> _tabButtons;
         private TabButton _selectedTab;
@@ -47,11 +65,16 @@ namespace UITools
             ResetTabs();
             if (changeColor) button.Background.color = selectedColor;
             if (changeSprite) button.Background.sprite = selectedSprite;
+            
+            panelsToSwap.ActivatePanel(button.transform.GetSiblingIndex());
+        }
 
-            var index = button.transform.GetSiblingIndex();
-            objectsToSwap
+        private void Start()
+        {
+            _tabButtons
+                .Where(button => button.transform.GetSiblingIndex() == 0)
                 .ToList()
-                .ForEach(x => x.SetActive(x.transform.GetSiblingIndex() == index));
+                .ForEach(OnTabSelected);
         }
 
         private void ResetTabs()
