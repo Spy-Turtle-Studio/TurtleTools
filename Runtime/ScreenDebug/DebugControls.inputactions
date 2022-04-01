@@ -1,0 +1,34 @@
+{
+    "name": "DebugControls",
+    "maps": [
+        {
+            "name": "Debug",
+            "id": "d6785e58-7a06-48c1-9a8c-7f95409a1c9b",
+            "actions": [
+                {
+                    "name": "FPS",
+                    "type": "Button",
+                    "id": "464b379a-fc66-4e69-8934-faf1fa5d6a60",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "39633430-340d-4ff8-9643-d9ea49b2d0ae",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FPS",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
