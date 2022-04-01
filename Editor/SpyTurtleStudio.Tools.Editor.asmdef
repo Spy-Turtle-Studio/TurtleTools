@@ -2,9 +2,12 @@
     "name": "SpyTurtleStudio.Tools.Editor",
     "rootNamespace": "spyturtlestudio.tools.Editor.",
     "references": [
-        "GUID:6546d7765b4165b40850b3667f981c26"
+        "GUID:6546d7765b4165b40850b3667f981c26",
+        "GUID:cc05580f9f9d87f44b1ed7abc125e3e0"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
