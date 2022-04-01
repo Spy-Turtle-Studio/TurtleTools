@@ -3,7 +3,8 @@
     "rootNamespace": "spyturtlestudio.tools.Editor.",
     "references": [
         "GUID:6546d7765b4165b40850b3667f981c26",
-        "GUID:cc05580f9f9d87f44b1ed7abc125e3e0"
+        "GUID:cc05580f9f9d87f44b1ed7abc125e3e0",
+        "GUID:7c114be836dee1642b7c17385074b214"
     ],
     "includePlatforms": [
         "Editor"
